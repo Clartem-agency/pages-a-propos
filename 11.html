@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Frédéric Delavictoire | Agence Clartem</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon-clartem.ico">
+
+    <meta name="description"
+        content="Découvrez l'histoire derrière l'Agence Clartem. Frédéric Delavictoire allie technologie et sensibilité pour créer les sites web des professionnels de l'accompagnement.">
+    <meta name="author" content="clartem.com">
+
+    <!-- SEO & Analytics (Identique à l'index) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54GH7QYLQP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-54GH7QYLQP');
+    </script>
+
+    <link rel="canonical" href="https://www.clartem.com/a-propos.html" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Config Couleurs -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#1E3A8A',
+                        'clarity-blue': '#3B82F6',
+                        'soft-blue': '#EFF6FF',
+                        'warm-orange': '#F97316',
+                        'success-green': '#16A34A',
+                        'neutral-dark': '#0F172A', /* Plus sombre pour le premium */
+                        'neutral-light': '#9CA3AF',
+                        'neutral-card': '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Style spécifique pour la timeline -->
+    <style>
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, #3B82F6, #F97316, transparent);
+            opacity: 0.3;
+        }
+        @media (max-width: 768px) {
+            .timeline-line { left: 20px; }
+        }
+    </style>
+</head>
+
+<body class="bg-neutral-dark text-white font-sans selection:bg-warm-orange selection:text-white">
+
+    <div class="min-h-screen overflow-hidden">
+
+        <!-- ======================================================= -->
+        <!--                NAVIGATION (Simplifiée)                  -->
+        <!-- ======================================================= -->
+        <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-neutral-dark/90 backdrop-blur-md border-b border-white/5">
+            <div class="container mx-auto px-6 flex justify-between items-center">
+                <a href="index.html" class="group">
+                    <img src="assets/logo-blanc-clartem.svg" alt="Logo Clartem" class="h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                </a>
+                <a href="index.html" class="text-sm font-bold text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                    Retour à l'accueil
+                </a>
+            </div>
+        </nav>
+
+        <!-- ======================================================= -->
+        <!--                HEADER HERO                              -->
+        <!-- ======================================================= -->
+        <section class="pt-40 pb-20 relative">
+            <!-- Glow background -->
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-clarity-blue/10 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10" data-sr>
+                <div class="inline-block px-4 py-1.5 border border-white/10 rounded-full bg-white/5 text-warm-orange text-xs font-bold tracking-widest uppercase mb-6">
+                    L'Humain derrière le Code
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+                    Je traduis votre <span class="text-transparent bg-clip-text bg-gradient-to-r from-clarity-blue to-white">sensibilité</span><br>
+                    en langage digital.
+                </h1>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light">
+                    Derrière chaque ligne de code de cette agence, il y a un parcours de résilience, de quête de sens et une profonde compréhension de votre métier.
+                </p>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!--                LA TIMELINE (L'HISTOIRE)                 -->
+        <!-- ======================================================= -->
+        <section class="py-20 relative">
+            <div class="container mx-auto px-6 relative">
+                
+                <!-- Ligne verticale -->
+                <div class="timeline-line"></div>
+
+                <!-- CHAPITRE 1 : LA QUÊTE -->
+                <div class="grid md:grid-cols-2 gap-12 mb-24 relative items-center" data-sr>
+                    <div class="md:text-right md:pr-12 order-2 md:order-1">
+                        <span class="text-clarity-blue font-bold text-6xl opacity-20 absolute -top-10 right-10 md:right-12">01</span>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">L'éveil et la quête de sens</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Tout a commencé vers la trentaine. J'avais un emploi stable à la SNCF, ce fameux "graal" de sécurité. Mais à l'intérieur, c'était le vide. Je ne me sentais pas à ma place.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            C'est là que j'ai ouvert mon premier livre de développement personnel. Tony Robbins, Dale Carnegie... Ce fut un choc. J'ai compris que la vie ne se subissait pas, elle se créait. J'ai quitté le confort pour l'inconnu, animé par cette petite flamme qui me disait : <em>"Tu vaux mieux que ça."</em>
+                        </p>
+                    </div>
+                    <!-- Point central -->
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-clarity-blue rounded-full transform -translate-x-1/2 mt-1.5 hidden md:block shadow-[0_0_15px_#3B82F6]"></div>
+                    
+                    <div class="md:pl-12 order-1 md:order-2">
+                        <div class="bg-neutral-card p-6 rounded-2xl border border-white/5">
+                            <p class="text-sm text-gray-300 italic">
+                                "C'est cette période qui me permet aujourd'hui de comprendre profondément le travail que vous faites avec vos clients. Je connais ce sentiment de vouloir changer de vie."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAPITRE 2 : L'ÉCOLE DE la VIE -->
+                <div class="grid md:grid-cols-2 gap-12 mb-24 relative items-center" data-sr>
+                    <div class="md:pr-12 order-2 md:order-1">
+                         <div class="bg-neutral-card p-6 rounded-2xl border border-white/5">
+                            <p class="text-sm text-gray-300 italic">
+                                "J'ai appris que l'entrepreneuriat n'est pas une ligne droite. Cette résilience, je la mets aujourd'hui au service de vos projets."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-gray-600 rounded-full transform -translate-x-1/2 mt-1.5 hidden md:block border border-gray-400"></div>
+
+                    <div class="md:pl-12 order-1 md:order-2 relative">
+                        <span class="text-gray-600 font-bold text-6xl opacity-20 absolute -top-10 left-10 md:left-12">02</span>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">Le MBA de la "vraie vie"</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            J'ai voulu aller vite. Trop vite. Immobilier, business, partenariats hasardeux... J'ai été atteint de ce que j'appelle affectueusement le <em>"syndrome de l'objet brillant"</em>. J'ai connu des succès grisants, puis des échecs cuisants.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            J'ai accumulé les dettes, j'ai fait confiance aux mauvaises personnes, et j'ai fini par toucher le fond, financièrement et moralement. C'était brutal, mais nécessaire. J'y ai perdu mon ego, mais j'y ai gagné une humilité indéfectible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CHAPITRE 3 : L'EXIL ET L'INTROSPECTION -->
+                <div class="grid md:grid-cols-2 gap-12 mb-24 relative items-center" data-sr>
+                    <div class="md:text-right md:pr-12 order-2 md:order-1 relative">
+                        <span class="text-warm-orange font-bold text-6xl opacity-20 absolute -top-10 right-10 md:right-12">03</span>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">L'exil en Estonie & le Voyage Intérieur</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            En 2022, je me suis retrouvé à Tallinn, en Estonie. Seul. Isolé. Froid dehors, mais le feu à l'intérieur. C'est là que j'ai troqué les livres de "business" pour la philosophie et la psychologie profonde.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            J'ai découvert Jung, Spinoza, Nietzsche. J'ai écouté Fabrice Midal, Chloé Bloom, Franck Lopvet. J'ai fait ce travail de l'ombre (*Shadow Work*). J'ai compris que la technique sans la conscience n'était rien. J'ai appris à écouter, vraiment.
+                        </p>
+                    </div>
+                    
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-warm-orange rounded-full transform -translate-x-1/2 mt-1.5 hidden md:block shadow-[0_0_15px_#F97316]"></div>
+
+                    <div class="md:pl-12 order-1 md:order-2">
+                        <div class="bg-neutral-card p-6 rounded-2xl border border-warm-orange/20">
+                             <p class="text-sm text-gray-300 italic">
+                                "Je ne suis pas juste un développeur. Je suis quelqu'un qui parle votre langage : celui de l'âme, des blocages et de la libération."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHAPITRE 4 : LA RÉVÉLATION TECH -->
+                <div class="grid md:grid-cols-2 gap-12 mb-24 relative items-center" data-sr>
+                    <div class="md:pr-12 order-2 md:order-1">
+                        <div class="bg-neutral-card p-6 rounded-2xl border border-white/5">
+                            <p class="text-sm text-gray-300 italic">
+                                "Mon super-pouvoir ? Utiliser l'intelligence artificielle pour coder des solutions complexes, tout en gardant une approche 100% humaine."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-success-green rounded-full transform -translate-x-1/2 mt-1.5 hidden md:block"></div>
+
+                    <div class="md:pl-12 order-1 md:order-2 relative">
+                        <span class="text-success-green font-bold text-6xl opacity-20 absolute -top-10 left-10 md:left-12">04</span>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">La Rencontre avec le Code</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            C'est dans cette solitude estonienne que j'ai découvert l'IA et le code. J'ai toujours eu un esprit logique (mon passé en électronique), mais là, c'était une révélation.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            J'ai commencé à créer des outils, des extensions, des sites. J'ai réalisé que je pouvais construire des choses concrètes, utiles. J'avais enfin trouvé le moyen de matérialiser mes idées. La technologie est devenue mon pinceau, et le web ma toile.
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- CHAPITRE 5 : CLARTEM -->
+                 <div class="grid md:grid-cols-2 gap-12 relative items-center" data-sr>
+                    <div class="md:text-right md:pr-12 order-2 md:order-1 relative">
+                        <span class="text-white font-bold text-6xl opacity-20 absolute -top-10 right-10 md:right-12">05</span>
+                        <h3 class="text-2xl font-bold text-white mb-4 relative z-10">La Naissance de Clartem</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            J'ai d'abord voulu créer une agence pour "tout le monde". Grosse erreur. En voulant parler à tous, je ne parlais à personne.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            Puis l'évidence m'a frappé : pourquoi ne pas allier ma nouvelle compétence (le web) avec ma passion de toujours (l'humain) ? C'est ainsi qu'est né Clartem. Une agence dédiée exclusivement à ceux qui réparent les âmes et guident les vies. Parce que c'est le seul monde que je veux vraiment servir.
+                        </p>
+                    </div>
+                    
+                    <div class="absolute left-0 md:left-1/2 w-4 h-4 bg-white rounded-full transform -translate-x-1/2 mt-1.5 hidden md:block shadow-[0_0_15px_white]"></div>
+
+                    <div class="md:pl-12 order-1 md:order-2">
+                        <div class="bg-gradient-to-br from-neutral-card to-gray-800 p-8 rounded-2xl border border-white/20 shadow-2xl">
+                             <h4 class="text-xl font-bold text-white mb-2">Frédéric Delavictoire</h4>
+                             <p class="text-warm-orange text-sm mb-4">Fondateur de Clartem</p>
+                             <p class="text-gray-300 text-sm leading-relaxed">
+                                "Je suis imparfait, j'ai trébuché mille fois, mais je me suis relevé mille et une fois. C'est cette énergie que je mets dans votre site web."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!--                MANIFESTE / MISSION                      -->
+        <!-- ======================================================= -->
+        <section class="py-24 bg-neutral-card relative overflow-hidden">
+             <!-- Decor -->
+             <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+             <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-warm-orange/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+             <div class="container mx-auto px-6 text-center max-w-4xl" data-sr>
+                <div class="mb-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-warm-orange mx-auto opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                </div>
+                
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-12 leading-tight">
+                    "Je crois que les grands changements ne se font pas dans les assemblées, mais dans l'intimité d'une conversation."
+                </h2>
+
+                <div class="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+                    <p>
+                        Dans ce déclic qu'un coach provoque. <br>
+                        Dans cette guérison qu'un thérapeute facilite.
+                    </p>
+                    <p>
+                        Ma mission chez Clartem n'est pas de faire du code. <br>
+                        C'est de donner une voix, une plateforme et une portée à ceux qui œuvrent dans l'ombre pour réparer, guider et élever l'humain.
+                    </p>
+                </div>
+
+                <div class="mt-16">
+                    <p class="text-warm-orange font-bold text-sm tracking-widest uppercase mb-4">Mon Mantra</p>
+                    <p class="text-2xl md:text-4xl font-serif italic text-white">
+                        "Pour ceux qui osent changer le monde,<br>un être humain à la fois."
+                    </p>
+                </div>
+             </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!--                CTA FINAL                                -->
+        <!-- ======================================================= -->
+        <section class="py-24 bg-neutral-dark relative">
+            <div class="container mx-auto px-6 text-center" data-sr>
+                <h2 class="text-3xl font-bold text-white mb-6">Prêt à écrire votre propre chapitre ?</h2>
+                <p class="text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Maintenant que vous connaissez mon histoire, j'aimerais découvrir la vôtre. Construisons le site qui portera votre mission.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="https://calendly.com/clartem-agency/appel-clarte-creation-de-site-web" target="_blank" class="btn btn-orange text-lg">
+                        Réserver un Appel Découverte
+                    </a>
+                    <a href="portfolio.html" class="btn btn-secondary text-lg border-gray-600 text-gray-300 hover:text-white hover:border-white">
+                        Voir mon travail
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER (Simplifié pour la page à propos) -->
+        <footer class="bg-neutral-dark border-t border-white/5 py-12 text-center text-gray-500 text-sm">
+            <div class="container mx-auto px-6">
+                <p>&copy; 2025 Agence Clartem. Fait avec ❤️ et résilience.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Initialisation spécifique pour cette page
+        if (typeof ScrollReveal !== 'undefined') {
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '30px',
+                duration: 1000,
+                delay: 200,
+                easing: 'cubic-bezier(0.5, 0, 0, 1)'
+            });
+            sr.reveal('[data-sr]');
+        }
+    </script>
+</body>
+</html>
